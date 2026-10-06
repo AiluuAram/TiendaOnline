@@ -1,0 +1,149 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f9e8ec;
+    color: #3b2a25;
+}
+
+form > div:not(.aspNetHidden) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 40px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0 -60px 40px;
+    padding: 28px 60px;
+    background: #6b4436;
+    color: #fff;
+    font-size: 1.9em;
+    line-height: normal;
+    border-bottom: 6px solid #d17a96;
+    text-align: center;
+}
+
+/* Caja blanca centrada en el medio de la pantalla */
+.contenido {
+    margin: auto;
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    border-top: 6px solid #6b4436;
+    box-shadow: 0 8px 24px rgba(107, 68, 54, 0.15);
+}
+
+input[type="text"], select {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin: 6px auto 14px;
+    border: 1px solid #e3b7c3;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #fff;
+}
+
+    input[type="text"]:focus, select:focus {
+        outline: none;
+        border-color: #d17a96;
+        box-shadow: 0 0 0 3px #f5d3dc;
+    }
+
+input[type="submit"] {
+    background: #6b4436;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    margin: 6px 0 14px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background: #d17a96;
+    }
+
+a {
+    color: #6b4436;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+    a:hover {
+        color: #d17a96;
+    }
+
+/* Tabla del listado: ocupa todo el ancho de la caja */
+table {
+    align-self: stretch;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    background: #fff;
+    text-align: left;
+    font-size: 1.15em;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: none;
+}
+
+th {
+    background: #6b4436;
+    color: #fff;
+    padding: 18px 20px;
+    text-align: left;
+}
+
+td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f5d3dc;
+}
+
+tr:nth-child(even) td {
+    background: #fdf0f3;
+}
+
+/* Bloques de la página principal */
+.menu {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    min-height: 360px;
+}
+
+    .menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background: #fff;
+        border: 2px solid #e3b7c3;
+        border-radius: 14px;
+        font-size: 1.8em;
+        text-decoration: none;
+        color: #6b4436;
+        transition: background 0.2s, color 0.2s;
+    }
+
+        .menu a:hover {
+            background: #6b4436;
+            color: #fff;
+            border-color: #6b4436;
+        }
+
+
